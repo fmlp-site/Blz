@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Vestibular</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulário de Inscrição</h1>
+    <form id="inscricaoForm">
+        <label for="nomeCompleto">Nome Completo:</label>
+        <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+
+        <label for="rg">RG:</label>
+        <input type="text" id="rg" name="rg" required>
+
+        <label for="curso">Escolha do Curso:</label>
+        <select id="curso" name="curso" required>
+            <option value="" disabled selected>Selecione seu curso</option>
+            <option value="Medicina">Medicina</option>
+            <option value="Direito">Direito</option>
+            <option value="Engenharia">Engenharia</option>
+            <option value="Administração">Administração</option>
+            <option value="Ciência da Computação">Ciência da Computação</option>
+        </select>
+
+        <label for="modalidadeConcorrencia">Modalidade de Concorrência:</label>
+        <input type="text" id="modalidadeConcorrencia" name="modalidadeConcorrencia" required>
+
+        <button type="submit">Enviar Inscrição</button>
+    </form>
+
+    <h2>Consulta de Inscrição</h2>
+    <form id="consultaForm">
+        <label for="idInscricao">Insira seu ID de Inscrição:</label>
+        <input type="text" id="idInscricao" name="idInscricao" required>
+        <button type="submit">Consultar</button>
+    </form>
+
+    <h2>Login do Administrador</h2>
+    <form id="loginForm">
+        <label for="usuarioAdmin">Usuário:</label>
+        <input type="text" id="usuarioAdmin" name="usuarioAdmin" required>
+        
+        <label for="senhaAdmin">Senha:</label>
+        <input type="password" id="senhaAdmin" name="senhaAdmin" required>
+        
+        <button type="submit">Login</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
